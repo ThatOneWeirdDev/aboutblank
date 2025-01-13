@@ -63,7 +63,11 @@
           <!DOCTYPE html>
           <html lang="en">
           <head><meta charset="UTF-8"><title>Loading...</title></head>
-          <body><script>location.href = "${url.replace(/"/g, '\\"')}";</script></body>
+          <body>
+            <script>
+              location.href = "${url.replace(/"/g, '\\"')}";
+            <\\/script>
+          </body>
           </html>
         `);
         newTab.document.close();
